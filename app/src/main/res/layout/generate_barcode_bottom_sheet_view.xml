@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/ic_baseline_close_24_black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/patient_information"
+            android:layout_weight="8"
+            android:gravity="start|center"
+            android:textSize="19sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/nameBottomSheetView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="name"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/birthdayBottomSheetView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="birthday"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/bloodDrawnBottomSheetView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="bloodDrawn"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+</LinearLayout>

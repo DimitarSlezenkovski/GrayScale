@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gray Scale</string>
+    <string name="patient_information">Patient Information</string>
+    <string name="infertility_test">Infertility Test</string>
+    <string name="my_origin_test">My Origin Test</string>
+    <string name="premium_genetics_test">Premium Genetics Test</string>
+    <string name="tap_to_see_information">Tap to see patient information</string>
+    <string name="infertility_test_activity">Infertility Test</string>
+    <string name="forms">Forms</string>
+    <string name="please_scan_again">Please scan again</string>
+    <string name="search">Search</string>
+</resources>

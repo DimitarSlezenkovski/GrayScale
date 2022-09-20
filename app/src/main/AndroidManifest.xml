@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grayscale">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GrayScale"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.grayscale3.Activies.Splash"
+            android:exported="true"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.grayscale3.Activies.Fromulars.InfertilityTestActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.grayscale3.Activies.Fromulars.FormsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.Fromulars.FormsActivity"
+            android:exported="false"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.GenerateCode.ShowGeneratedBarcode"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.AwdNo.GetAwbRecords"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.BarcodeScanners.OperationTwoBarcodeScanner"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.grayscale3.Activies.IntakeFullKit.LabsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.Shipment.BarcodeResultActivity"
+            android:exported="false"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.BarcodeScanners.AditionalScanners.ExpirationScannerActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.grayscale3.Activies.Shipment.BarcodeResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.IntakeFullKit.LabsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.grayscale3.Activies.IntakeFullKit.CitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.IntakeFullKit.CitiesActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.FinishedPostingData"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.AssignAPatient.PatientsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.grayscale3.Activies.BarcodeScanners.Scanner"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.OperationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activies.OperationsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activies.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activies.TestActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activies.LoginActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>
